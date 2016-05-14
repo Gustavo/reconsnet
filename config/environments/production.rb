@@ -80,9 +80,10 @@ ReconsNet::Application.configure do
 
   config.action_mailer.default_url_options = { host: 'reconscientia.org' }
   config.action_mailer.delivery_method = :smtp
-  config.action_mailer.smtp_settings = { address: 'smtp.mandrillapp.com',
+  config.action_mailer.smtp_settings = { address: 'smtp.mailgun.org',
                                          port: 587,
+                                         domain: 'mg.reconscientia.org',
                                          authentication: :plain,
-                                         user_name: 'reconscientia@gmail.com',
-                                         password: 'T1wtiD0H9AYoMvaRP55jaA'}
+                                         user_name: 'postmaster@mg.reconscientia.org',
+                                         password: '31a3cdd46d3077df14145ec72c12ed77'}
 end
