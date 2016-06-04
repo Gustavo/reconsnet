@@ -84,6 +84,6 @@ ReconsNet::Application.configure do
                                          port: 587,
                                          domain: 'mg.reconscientia.org',
                                          authentication: :plain,
-                                         user_name: 'postmaster@mg.reconscientia.org',
-                                         password: '31a3cdd46d3077df14145ec72c12ed77'}
+                                         user_name: ENV['SMTP_USERNAME'],
+                                         password: ENV['SMTP_PASSWORD']}
 end
