@@ -13,11 +13,8 @@
   <div class="container">
 
     <h1 class="text-center">Atividades em destaque</h1>
-    <p>
-      <button type="button" class="btn btn-primary">Primary</button>
-    </p>
     <h4 class="text-center"><%= link_to "#{fa_icon('calendar')} AGENDA".html_safe, events_path, class: "btn btn-primary" %>
-      ou <%= link_to "#{fa_icon('fa-thumb-tack')} ATIVIDADES".html_safe, activities_path %>
+      ou <%= link_to "#{fa_icon('fa-calendar-check-o')} ATIVIDADES".html_safe, activities_path, class: "btn btn-success" %>
     </h4>
 
 
