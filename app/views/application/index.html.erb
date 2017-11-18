@@ -1,8 +1,8 @@
 
   <div class="jumbotron text-center">
-    <%= image_tag 'logo-cor-transparente.png' %>
-    <h2>Associação Internacional de Pesquisologia <br> para Megaconscientização</h2>
-    <p>Autoconscientização via pesquisa </p>
+    <%= image_tag 'cit-logo.png' %>
+    <h2>Sistema de Gestão de Pessoas</h2>
+    <p>Uma ferramenta focada para as ICs gerenciar seus voluntários e alunos.</p>
     <br>
     <p><%= link_to "Saiba Mais #{fa_icon('angle-right')}".html_safe, about_path, class: 'btn btn-default btn-lg' %></p>
   </div>
@@ -13,8 +13,11 @@
   <div class="container">
 
     <h1 class="text-center">Atividades em destaque</h1>
-    <h4 class="text-center">Ver <%= link_to 'agenda', events_path %>
-      ou <%= link_to 'atividades', activities_path %>
+    <p>
+      <button type="button" class="btn btn-primary">Primary</button>
+    </p>
+    <h4 class="text-center"><%= link_to "#{fa_icon('calendar')} AGENDA", events_path, class: "btn btn-primary" %>
+      ou <%= link_to "#{fa_icon('fa-thumb-tack')} ATIVIDADES", activities_path %>
     </h4>
 
 
