@@ -23,7 +23,7 @@
           </button>
 
           <a class="navbar-brand" href="<%= root_path %>">
-            <%= image_tag 'cit-logo.png', style: 'max-width:100%; max-height:100%;', alt: 'CIT' %>
+            <%= image_tag 'cit-logo-branca.png', style: 'max-width:100%; max-height:100%;', alt: 'CIT' %>
           </a>
         </div>
 
@@ -44,9 +44,6 @@
             <% end %>
           </ul>
           <ul class="nav navbar-nav pull-right">
-            <li>
-              <a style="padding: 11px;" href="https://facebook.com/Reconscientia" target="_blank"><%= fa_icon 'facebook-official 2x' %></a>
-            </li>
             <% if is_volunteer? current_user %>
                 <%= render 'common/menu/help_menu' %>
             <% end %>
@@ -106,7 +103,7 @@
     <div class="row">
 
       <div class="col-md-3">
-        <%= image_tag 'cit-logo-branca.png', style: 'max-width:100%; max-height:100%;' %>
+        <%= image_tag 'cit-logo-branca.png', style: 'max-width:100%; max-height:80px;' %>
       </div>
 
       <div class="col-md-5">

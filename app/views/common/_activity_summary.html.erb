@@ -24,7 +24,7 @@ Mostra informações sobre uma atividade e destaca/mostra quando ela ocorrerá (
     <% if next_event and false %>
         <p class="pull-right"><%= fa_icon 'clock-o' %> Começa em <%= time_ago_in_words next_event.start %></p>
     <% end %>
-    <p><%= activity.summary %></p>
+    <p><%= activity.summary.html_safe %></p>
   </div>
 
 </div>
