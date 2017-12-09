@@ -24,7 +24,8 @@ Parapercepciografia
 Voluntariado)
 
   EVENT_ADMIN_ROLE_AREAS = %w(Eventos Jurídico-Financeiro Parapedagogia)
-  VOLUNTEER_ADMIN_ROLE_AREAS = %w(Voluntariado)
+  # VOLUNTEER_ADMIN_ROLE_AREAS = %w(Voluntariado)
+  # VOLUNTEER_ADMIN_ROLE_AREAS = %w(Voluntariado)
   PERSON_ADMIN_ROLE_AREAS = %w(Eventos Voluntariado)
   ADMIN_ROLE_AREAS = %w(Coordenação\ Geral Banco\ de\ Dados)
 
