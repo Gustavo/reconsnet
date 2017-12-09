@@ -89,17 +89,21 @@ class Event < ApplicationRecord
     allow = true
 
     # Devem existir participantes inscritos
-    allow = false if participations.where(status: Participation.statuses[:enrolled]).empty?
+    if participations.where(status: Participation.statuses[:enrolled]).empty
+      allow = false
 
     # Só é possivel fechar um evento se todos os participantes estão inscritos e não em outros
     # estados "temporários"
-    allow = false if participations.where.not(status: Participation.statuses[:enrolled]).any?
+    if participations.where.not(status: Participation.statuses[:enrolled]).any?
+      allow = false
 
     # Todos participantes devem ter sua presença marcada
-    allow = false if participations.where(attendance: nil).any?
+    if participations.where(attendance: nil).any?
+      allow = false
 
     # Deve existir ao menos uma lista de presença escaneada
-    allow = false if resource_assets.where(asset_type: ResourceAsset.asset_types[:attendance_list]).empty?
+    if resource_assets.where(asset_type: ResourceAsset.asset_types[:attendance_list]).empty?
+      allow = false
 
     allow
   end
