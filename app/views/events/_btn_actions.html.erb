@@ -28,7 +28,7 @@
         <li class="divider"></li>
 
         <% if policy(@event).roles? %>
-            <li><%= link_to 'Permissões', roles_event_path(@event) %></li>
+            <li><%= link_to 'Participantes', roles_event_path(@event) %></li>
         <% end %>
         <% if policy(@event).show? %>
             <li><%= link_to 'Histórico de alterações', versions_event_path(@event) %></li>
