@@ -17,7 +17,7 @@ class EventBasePdf < BasePdf
     start_date_str = I18n.l @event.start.to_date
     finish_date_str = I18n.l @event.finish.to_date
 
-    image 'app/assets/images/logomarca_recons.jpg', :scale => 0.50
+    image 'app/assets/images/cit-logo.png', :scale => 0.50
 
     text_box "Gerado #{I18n.l DateTime.now} por #{@current_user.name}",
              align: :right, valign: :top, style: :italic, size: 9
