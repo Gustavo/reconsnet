@@ -20,7 +20,7 @@ gem 'sass-rails', '~> 5.0'
 gem 'font-awesome-rails'
 gem 'autoprefixer-rails', '>= 5.2.1' # recommended for bootstrap-sass
 gem 'bootstrap_form'
-gem 'tinymce-rails'
+gem 'tinymce-rails', '~> 4.7.4'
 gem 'tinymce-rails-langs'
 gem 'tinymce-rails-imageupload', '~> 4.0.0.beta'
 gem 'kaminari' # will_paginate, rails 4.1 e pg_search não estavam funcionando bem juntos então a opção pelo kaminari
