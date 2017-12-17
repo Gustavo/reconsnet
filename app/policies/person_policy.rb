@@ -2,11 +2,11 @@ class PersonPolicy < ApplicationPolicy
 
 
   def index?
-    (user.is_admin? or user.is_person_admin? or user.is_volunteer?) if user
+    (user.is_admin? or user.is_person_admin? or user.is_volunteer or user.is_volunteer_admin?) if user
   end
 
   def show?
-    (user.is_admin? or user.is_person_admin? or user.is_volunteer?) if user
+    (user.is_admin? or user.is_person_admin? or user.is_volunteer or user.is_volunteer_admin?) if user
   end
 
   def create?
